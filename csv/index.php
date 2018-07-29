@@ -1,6 +1,6 @@
 <?php
 
-//index.php
+
 $connect = mysqli_connect("localhost", "root", "root", "csv");
 $message = '';
 
@@ -43,7 +43,7 @@ if(isset($_POST["upload"]))
 
 if(isset($_GET["updation"]))
 {
- $message = '<label class="text-success">Product Updation Done</label>';
+ $message = '<label class="text-success">Updation Done</label>';
 }
 
 $query = "SELECT * FROM list";
@@ -57,7 +57,7 @@ $result = mysqli_query($connect, $query);
  <body>
   <br />
   <div class="container">
-   <h2 align="center">Update Mysql Database through Upload CSV File using PHP</a></h2>
+   <h2 align="center">Table</a></h2>
    <br />
    <form method="post" enctype='multipart/form-data'>
     <p><label>Please Select File(CSV)</label>
